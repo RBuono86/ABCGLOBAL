@@ -1,0 +1,420 @@
+/*--- General CSS Rules ---*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(images/bg-pattern.jpg);
+    margin: 0;
+    font-family: Objective, sans-serif;
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: white !important;
+    text-align: left;
+    background-color: #252525 !important;
+}
+
+body a {
+    color: #c3c3c3 !important;
+    text-decoration: none;
+}
+
+body a:hover {
+    color: #ffc107 !important;
+    text-decoration: none;
+}
+
+.hr {
+    border-top: solid 1px #333;
+    box-shadow: #000 0 -1px 0;
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 10px;
+    border-top: solid 1px #333;
+    box-shadow: #000 0 -1px 0;
+    margin: 0 10% 0 10%;
+}
+
+.section h2.section-head,
+h4.section-head {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section h2.section-head::after,
+h4.section-head::after {
+    background: #ffc107;
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 20px auto;
+}
+
+
+/*--- Login/Register Link ---*/
+
+#headlinks {
+    color: rgb(197, 197, 197);
+    float: right;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+
+/*--- Navigation Menu ---*/
+
+#nav-bar {
+    position: sticky;
+    background-image: url(images/bg-info.jpg);
+    z-index: 100;
+    top: 0;
+    filter: drop-shadow(10px 10px 10px grey);
+    left: 0;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+
+/*--- Rules for Navigation Menu Unordered List ---*/
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-nav li a {
+    font-weight: 500;
+    float: right;
+    text-align: left;
+}
+
+.navbar-toggler {
+    outline: none;
+}
+
+
+/*--- Carousel Slides ---*/
+
+.carousel-caption {
+    position: absolute;
+    top: 240px;
+}
+
+.carousel-caption h1 span {
+    color: #ffc107;
+}
+
+.carousel-caption p {
+    font-size: 20px;
+}
+
+.carousel-item img {
+    max-height: 100vh;
+}
+
+
+/*--- Background Overlay ---*/
+
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bg-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #212529;
+    opacity: .55;
+}
+
+
+/*--- Services ---*/
+
+.service-box {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service-box i.fa {
+    color: #ffc107;
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+
+/*--- Testimonials ---*/
+
+.testimonial {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/*--- Recent News ---*/
+
+.news-post {
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+
+.news-post img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.news-post h3 {
+    font-size: 1.35rem;
+}
+
+.news-post h3 a {
+    color: #ffc107;
+}
+
+.post-date {
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.post-date::before {
+    content: "\f073";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+
+a.readmore {
+    font-size: 14px;
+    color: #ffc107;
+}
+
+a.readmore::after {
+    content: "\f101";
+    font-family: FontAwesome;
+    padding-left: 5px;
+}
+
+
+/*--- Footer ---*/
+
+.info-widget {
+    font-size: 14px;
+}
+
+.info-widget h4::after {
+    content: '';
+    background: #ffc107;
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 5px 0;
+}
+
+.info-widget a {
+    color: #fff;
+}
+
+.latest-news {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.latest-news li {
+    margin-bottom: 3px;
+}
+
+.latest-news li::before {
+    content: "\f101";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+
+
+/*--- Footer Copyright & Social Links ---*/
+
+#crsl {
+    color: rgb(126, 126, 126);
+    padding: 10px 0;
+    background-image: url(images/bg-info.jpg);
+}
+
+#social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#social-icons li {
+    display: inline-block;
+    padding-left: 5px;
+    margin: 5px;
+}
+
+#social-icons li a {
+    color: rgb(126, 126, 126);
+    font-size: 23px;
+}
+
+
+/*-----Input Form (Contact Us / Add Product -----*/
+
+.page-overlay {
+    background: rgb(0 0 0 / 18%);
+    color: white;
+    margin-top: 50px !important;
+    padding: 20px;
+}
+
+.form-control {
+    background: transparent !important;
+    color: rgb(165, 165, 165);
+}
+
+
+/*-----Admin/Member Login Form -----*/
+
+.login-form {
+    color: white;
+    margin-bottom: 50px;
+    padding: 13px 0;
+}
+
+.login-form h3 {
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+.text-box {
+    width: 100%;
+    overflow: hidden;
+    padding: 8px 0;
+    border-bottom: 1px solid #ffc107;
+}
+
+.text-box i {
+    margin-top: 12px;
+    width: 26px;
+    float: left;
+    text-align: center;
+}
+
+.text-box input {
+    background: transparent !important;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+
+
+/* --- Style Table --*/
+
+.table th,
+.table td {
+    border-top: none !important;
+}
+
+.table th {
+    border-bottom: solid 1px #333 !important;
+    box-shadow: #000 0 1px 0 !important;
+}
+
+.table-border {
+    border: solid 1px #333 !important;
+    box-shadow: #000 0 -1px 0 !important;
+    margin: 10px 0 20px;
+}
+
+.table-content {
+    background: transparent;
+    color: white !important;
+}
+
+
+/* Pagination  Styling */
+
+.pagination {
+    float: right;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+}
+
+.pagination li {
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.pagination li a {
+    border: none;
+    color: #fff;
+}
+
+.pagination .active {
+    padding: 0 10px;
+    background: #333;
+}
+
+
+/*----- Breadcrumb -----*/
+
+.breadcrumb {
+    background: transparent !important;
+}
+
+.breadcrumb>li:first-child:before {
+    content: "\f015";
+    font-family: FontAwesome;
+    padding-right: 4px;
+    color: rgb(255, 255, 255);
+}
+
+
+/*--- Media Rules ---*/
+
+@media (max-width: 1600px) {
+    .carousel-caption h1 {
+        /*Enlarge h1 caption element on large screen*/
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-dark .navbar-brand {
+        /*Make Company Name small*/
+        font-size: 16px;
+    }
+    .carousel-indicators li {
+        /*Hide Carousel indicators*/
+        visibility: hidden;
+    }
+    .carousel-caption {
+        /*Bring caption down*/
+        top: 30%;
+    }
+    .carousel-caption h1 {
+        /*Reduce caption h1 element size*/
+        font-size: 20px;
+    }
+    .carousel-caption p {
+        font-size: 15px;
+    }
+    #crsl {
+        text-align: center;
+    }
+}
